@@ -24,3 +24,11 @@ impl Node2DVirtual for test{
         Self { node2d }
     }
 }
+
+#[godot_api]
+impl test {
+    #[func]
+    fn helloworld(&mut self, gd_string: GodotString) -> GodotString {
+        format!("String from Rust! {}", gd_string).into()
+    }
+}
