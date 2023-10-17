@@ -1,1 +1,1 @@
-https://godot-rust.github.io/book/intro/hello-world.html
+[Setting Up Rust in Godot 4.1! Advanced Godot 4!](https://www.youtube.com/watch?v=z14cfTc40uQ)
