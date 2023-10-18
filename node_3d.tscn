@@ -1,8 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmnudddfik7sx"]
+[gd_scene load_steps=3 format=3 uid="uid://cmnudddfik7sx"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_mioab"]
+[ext_resource type="Script" path="res://Label.gd" id="2_714s6"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("1_mioab")
+
+[node name="test" type="test" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 264.0
+offset_top = 195.0
+offset_right = 842.0
+offset_bottom = 476.0
+text = "ooooo"
+script = ExtResource("2_714s6")
