@@ -36,7 +36,8 @@ impl test {
     #[func]
     fn dictionary(&mut self, from_godot: Dictionary) ->  Dictionary {
         // haven't found a way to avoid converting to string and then parsing an integer
-        // note we need to use f64, as Godot uses 64-bit floats and f32 will be slightly innacurate
+        // note we need to use f64, as Godot uses 64-bit floats and f32 will be slightly innacurate.
+        // Godot also uses 64-bit integers, so we can use i64 here in rust land.
         let num: f64 = from_godot.get("question").unwrap().to_string().parse().unwrap();
 
         // Assign directly to Godot types
