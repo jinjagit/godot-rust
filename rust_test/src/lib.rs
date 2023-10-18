@@ -35,6 +35,7 @@ impl test {
 
     #[func]
     fn dictionary(&mut self, from_godot: Dictionary) ->  Dictionary {
+        // haven't found a way to avoid converting to string and then parsing an integer
         let num: i32 = from_godot.get("question").unwrap().to_string().parse().unwrap();
 
         // Assign directly to Godot types
@@ -45,7 +46,6 @@ impl test {
         let mut c = PackedVector3Array::new();
         c.push(a);
         c.push(b);
-
 
         dict.insert("fromRust", c);
         dict.insert("answer", num * 2);
