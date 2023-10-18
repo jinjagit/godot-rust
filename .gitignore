@@ -8,3 +8,5 @@ rust_test/target/debug/incremental/
 rust_test/target/.rustc_info.json
 rust_test/target/CACHEDIR.TAG
 rust_test/Cargo.lock
+.DS_Store
+

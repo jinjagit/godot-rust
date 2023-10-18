@@ -5,7 +5,7 @@ func _ready():
 	var rust_string: String = test.new().helloworld("String from Godot!")
 	print(rust_string)
 
-	var dict = {"question": 21}
+	var dict = {"question": 21.05}
 	print(dict)
 	var rust_thing: Dictionary = test.new().dictionary(dict)
 	print(rust_thing)
