@@ -7,7 +7,7 @@ func _ready():
 
 	var dict = {"question": 21}
 	print(dict)
-	var rust_thing = test.new().dictionary(dict)
+	var rust_thing: Dictionary = test.new().dictionary(dict)
 	print(rust_thing)
 	var pva : PackedVector3Array = rust_thing["fromRust"]
 	print(pva[1])

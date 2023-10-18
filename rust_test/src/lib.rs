@@ -40,8 +40,8 @@ impl test {
 
         // Assign directly to Godot types
         let mut dict = Dictionary::new();
-        let a = Vector3::new(1.0,2.0,3.0);
-        let b = Vector3::new(4.0,5.0,6.0);
+        let a = Vector3::new(1.4,2.7,3.2);
+        let b = Vector3::new(4.4,5.9,6.1);
 
         let mut c = PackedVector3Array::new();
         c.push(a);
